@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skyblocknucleus",
+	"version": "${version}",
+	"name": "SkyblockNucleus",
+	"description": "Classic Hypixel Skyblock QOL in Modern Minecraft!",
+	"authors": [
+		"ZedBear"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skyblocknucleus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zedbear.skyblocknucleus.SkyblockNucleus"
+		],
+		"client": [
+			"net.zedbear.skyblocknucleus.SkyblockNucleusClient"
+		],
+		"fabric-datagen": [
+			"net.zedbear.skyblocknucleus.SkyblockNucleusDataGenerator"
+		]
+	},
+	"mixins": [
+		"skyblocknucleus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
